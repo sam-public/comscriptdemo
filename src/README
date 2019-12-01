@@ -1,0 +1,3 @@
+Original commit from thumb drive I just found, thought I'd lost this code. All files last modified 9/10/2008.
+
+This is a demonstration of a lightweight C++ application, built using WTL (Windows Template Library) and ATL (ActiveX Template Library) invoking javascript code via IDispatch, monitoring variables, and receiving callbacks.
