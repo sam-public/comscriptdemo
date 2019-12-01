@@ -1,0 +1,27 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(AAED47C5-A565-4bb8-AAD4-DBB5F520A38C),
+	version(1.0),
+	helpstring("ScriptDemo 1.0 Type Library")
+]
+library ScriptDemo
+{
+	importlib("stdole2.tlb");
+
+    [
+		object,
+		uuid(D5AD8914-14A4-4707-8F53-6CDC55258E56),
+		dual,
+		helpstring("IScriptObj Interface"),
+		pointer_default(unique)
+	]
+	interface IScriptObj : IDispatch
+	{
+        [id(1)] HRESULT alert([in]BSTR bsText);
+        [id(2)] HRESULT CallbackTest([in]IDispatch *pDisp);
+        [id(3)] HRESULT sleep([in]UINT ms);
+	}
+
+}
